@@ -2,11 +2,11 @@ module.exports = {
   dependency: {
     platforms: {
       ios: {
-        project: "./ios/RNBackgroundDownloader.xcodeproj"
+        project: './ios/RNBackgroundDownloader.xcodeproj',
       },
       android: {
-        sourceDir: "./android"
-      }
-    }
-  }
-};
+        sourceDir: './android',
+      },
+    },
+  },
+}
