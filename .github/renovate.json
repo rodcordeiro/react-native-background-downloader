@@ -1,0 +1,49 @@
+{
+    "branchPrefix": "updates/",
+    "baseBranches": [
+        "develop"
+    ],
+    "rebaseWhen": "behind-base-branch",
+    "packageRules": [
+        {
+            "updateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ],
+            "automerge": true
+        },
+        {
+            "updateTypes": [
+                "major"
+            ],
+            "automerge": false
+        }
+    ],
+    "assignAutomerge": true,
+    "assignees": [
+        "rodcordeiro"
+    ],
+    "labels": [
+        "dependencies"
+    ],
+    "recreateClosed": true,
+    "vulnerabilityAlerts": {
+        "labels": [
+            "security"
+        ],
+        "assignees": [
+            "@rodcordeiro"
+        ]
+    },
+    "extends": [
+        "config:base",
+        ":dependencyDashboard",
+        "github>whitesource/merge-confidence:beta"
+    ],
+    "schedule": [
+        "before 3am on the first day of the month"
+    ],
+    "timezone": "America/Sao_Paulo"
+}
