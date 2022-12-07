@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "prepublish": "jest && npm run lint",
+    "prepublishOnly": "jest && npm run lint",
     "lint": "eslint --fix --ext .js,.jsx . "
   },
   "repository": {
